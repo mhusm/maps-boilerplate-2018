@@ -1,5 +1,7 @@
 # Techstack Setup for Studio Web/Mobile 2018
 TODO add techstack figure here
+This setup needs to be done once per group. The following instructions assume that you have a technical background. To see the instructions on how to use the projects that your team mate has created go here TODO.
+
 
 ## About this guide
 Instructions starting with *$* should be typed into a command line. 
@@ -72,3 +74,11 @@ http.listen(process.env.PORT || 8090, function(){
 * $ node server.js
 * Check in the browser that the website is served
 
+## Adding Google maps
+The goal of this step is to add Google Maps to your project.
+
+* Go to the [Google Cloud platform console](https://console.cloud.google.com/)
+* Create a new project
+* Enable the Maps Javascript API
+* Go to *Credentials* and create an API Key
+* Restrict the API to *localhost* (later you will also need to add Heroku here). Only websites that are listed here can access Google Maps with your key. This step is needed to make sure that no one else can use your key and your free quota on their website.
