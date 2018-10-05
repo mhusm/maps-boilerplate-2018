@@ -77,8 +77,40 @@ http.listen(process.env.PORT || 8090, function(){
 ## Adding Google maps
 The goal of this step is to add Google Maps to your project.
 
+### Getting an API key
 * Go to the [Google Cloud platform console](https://console.cloud.google.com/)
 * Create a new project
 * Enable the Maps Javascript API
 * Go to *Credentials* and create an API Key
 * Restrict the API to *localhost* (later you will also need to add Heroku here). Only websites that are listed here can access Google Maps with your key. This step is needed to make sure that no one else can use your key and your free quota on their website.
+* In the file *index.html* add the following line inside the `head`: `<script src="https://maps.googleapis.com/maps/api/js?key=API-Key"></script>` 
+* Replace `API-Key` with your API key from Google.
+
+### Adding a map to the application
+* In the file *home.vue* add a `<div id="map"></div>`. This is where the map will be displayed.
+* Give the map a height and a width using CSS 
+```html
+<style scoped lang="scss">
+#map {
+  height: 80vh;
+  width: 80vw;
+}
+</style>
+```
+* Initialize the map and set it to a location
+```javascript
+export default {
+  name: "home",
+  components: {
+    HelloWorld
+  },
+  mounted: function(){
+    const element = document.getElementById("map")
+    const options = {
+        zoom: 14,
+        center: new google.maps.LatLng(47.071467, 8.277621)
+    }
+    this.map = new google.maps.Map(element, options);
+  }
+};
+```
