@@ -86,7 +86,7 @@ The goal of this step is to add Google Maps to your project.
 * In the file *index.html* add the following line inside the `head`: `<script src="https://maps.googleapis.com/maps/api/js?key=API-Key"></script>` 
 * Replace `API-Key` with your API key from Google.
 
-### Adding a map to the application
+### Adding a map to your Vue application
 * In the file *home.vue* add a `<div id="map"></div>`. This is where the map will be displayed.
 * Give the map a height and a width using CSS 
 ```html
@@ -114,3 +114,37 @@ export default {
   }
 };
 ```
+* Check in the browser, if the map is showing up
+
+## Integrating the Contentful CMS
+The goal of this step is to have the Contentful CMS integrated in your project. With a CMS, content (images, texts) can be created independent from the code. This way, you don't have to re-deploy the project whenever the content changes. We are going to use [Contentful](https://www.contentful.com/) as a cloud-based, headless CMS. In headless CMS, no templates are used in the CMS, instead the data is sent over a Rest-API to our Vue.js client.
+
+### Creating an account and a project
+* Go to the [Contentful website](https://www.contentful.com/) 
+* Create an account
+* Create an organization
+* A sample project is created for you
+
+### Integrating Contentful in your Vue application
+* $ npm install contentful --save
+* Import the contenful library in *main.js*
+```javascript
+import {createClient} from 'contentful'
+```
+* Configure the client with your access key and space token. We add the contentfulClient to the window Object to make it available globally in our application.
+```javascript
+window.contentfulClient = createClient({
+    accessToken: '64d6a750c7ae5a7c93603911e56166b198ce5ab94be05261848e8a280ba8972c',
+    space: '7la5sjify8om'
+});
+```
+* Get data from Contenful and print it to the console.
+```javascript
+contentfulClient.getEntries()
+.then((response) => console.log(response.items))
+.catch(console.error);
+```
+* Open the console in the browser and look at the ouptut.
+
+
+
