@@ -31,7 +31,7 @@ Build production ready bundle
 * $ npm run build
 
 
-## Setting up your IDE
+## Setting up your development environment
 The goal of this step is to have an IDE setup so that you can work productively.
 
 * Install [Visual Studio Code](https://code.visualstudio.com/) or use your favourite IDE
