@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 // serve all files in dist
 //app.use(express.static('dist'));
-app.use(serveStatic(__dirname + "/dist"));
+app.use(serveStatic(__dirname + "../dist"));
 
 http.listen(process.env.PORT || 8090, function(){
     console.log(`listening on *: ${http.address().port}`);
