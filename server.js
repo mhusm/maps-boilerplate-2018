@@ -5,10 +5,6 @@ let path = require('path');
 let serveStatic = require('serve-static');
 let fs = require('fs');
 
-fs.readdirSync(__dirname).forEach(file => {
-    console.log(file);
-  })
-
 // serve the index.html as starting page
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, "dist", "index.html"))
