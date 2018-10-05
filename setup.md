@@ -13,6 +13,12 @@ You can open a command window on Windows by pressing the windows key and typing 
 * If you have it installed already, check the version in the command line: $ node -v 
 * Make sure you have at least version 8.11, if not update.
 
+## Install Git
+Git helps your collaborte with your team mates and provides version control.
+
+* https://git-scm.com/downloads
+
+
 ## Creating a Vue.js project
 
 We are going to use the [Vue Command Line Interface (CLI)](https://cli.vuejs.org/guide/creating-a-project.html#vue-create).
@@ -146,5 +152,12 @@ contentfulClient.getEntries()
 ```
 * Open the console in the browser and look at the ouptut.
 
+# Push your project to Github
+* Create an account at 
+* Optionally (but recommended) get the [Student pack](https://education.github.com/pack). This gives you free private repos and a free plan with Heroku
+* Make sure that your HSLU email address is set in your account to get the student pack.
+* Create and add an SSH key for your machine (so you don't have to enter your password on every commit or update) using [these instructions](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+* Create a new repository
+* Add your project to the repo using [these instructions](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/). Vue-CLI has already initialized the project so you can start with step 5. You can also do these steps through the UI of VS code except for step 8.
 
 
