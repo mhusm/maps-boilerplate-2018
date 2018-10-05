@@ -9,13 +9,30 @@ You can open a command window on Windows by pressing the windows key and typing 
 
 * Install Node.js from [https://nodejs.org/en/](https://nodejs.org/en/)
 * If you have it installed already, check the version in the command line: $ node -v 
-* Make sure you have at least version 8.x, if not update.
+* Make sure you have at least version 8.11, if not update.
 
 ## Creating a Vue.js project
 
-Run the following commands in the command line a location where you want your project to be.
+We are going to use the [Vue Command Line Interface (CLI)](https://cli.vuejs.org/guide/creating-a-project.html#vue-create).
+Run the following commands in the command line.
 * $ npm install -g @vue/cli
-* $ vue init webpack-simple my-project 
-* $ cd my-project 
-* $ npm install 
-* $ npm run dev 
+* $ vue ui
+* In the UI choose a name and a location for the project.
+* Choose manual presets.
+* In addition to the defaults, also add the Router and CSS Preprocessors
+* Pick Sass and ESlint + Prettier options
+
+## Using the Vue CLI service
+
+Dev server with Hot-Module-Replacement (HMR)
+* $ npm run serve
+
+Build production ready bundle
+* $ npm run build
+
+
+## Setting up your IDE
+* Install [Visual Studio Code](https://code.visualstudio.com/) or use your favourite IDE
+* Install a Vue.js Plugin
+
+## Creating a simple HTTP-Server for the deploymet
