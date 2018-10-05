@@ -59,10 +59,12 @@ We are going to use Node.js with the [Express framework](http://expressjs.com/).
 * Add the following code to the file
 
 ```javascript
-var express = require('express');
-var app = express();
-var http = require('http').Server(app);
-var path = require('path');
+let express = require('express');
+let app = express();
+let http = require('http').Server(app);
+let path = require('path');
+let serveStatic = require('serve-static');
+let fs = require('fs');
 
 // serve the index.html as starting page
 app.get('/', function (req, res) {
