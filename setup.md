@@ -188,8 +188,8 @@ The goal of this step is to have your project run in the cloud so that it can be
 * As a deployment method choose Github
 * Look for your user name and project
 * Enable automatic deploys
-* Open the app in the browser and make sure that it works.
-* Add your Heroku app as a referrer for google Maps
+* Open the app in the browser and make sure that your website is displayed.
+* Add your Heroku app as a referrer for Google Maps
 
 
 
