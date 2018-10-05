@@ -32,7 +32,43 @@ Build production ready bundle
 
 
 ## Setting up your IDE
-* Install [Visual Studio Code](https://code.visualstudio.com/) or use your favourite IDE
-* Install a Vue.js Plugin
+The goal of this step is to have an IDE setup so that you can work productively.
 
-## Creating a simple HTTP-Server for the deploymet
+* Install [Visual Studio Code](https://code.visualstudio.com/) or use your favourite IDE
+* Open your project folder
+* Open the file *App.vue*
+* Install a Vue.js Plugin
+* Start the dev server from a terminal within VS Code
+* Look at the folders *components* and *views*
+* Update the message in the file home.vue and look at the change in the browser.
+
+## Creating a simple HTTP-Server for the deployment
+The goal of this step is to have a simple HTTP server for static files that we can use when we deploy the app.
+We are going to use Node.js with the [Express framework](http://expressjs.com/).
+
+* npm install express -save
+* In the top level of your project folder create a file named *server.js*
+* Add the following code to the file
+
+```javascript
+var express = require('express');
+var app = express();
+var http = require('http').Server(app);
+var path = require('path');
+
+// serve the index.html as starting page
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, "dist", "index.html"))
+});
+
+// serve all files in dist
+app.use(express.static('dist'));
+
+http.listen(process.env.PORT || 8090, function(){
+    console.log(`listening on *: ${http.address().port}`);
+});
+```
+
+* $ node server.js
+* Check in the browser that the website is served
+
