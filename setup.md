@@ -160,4 +160,34 @@ contentfulClient.getEntries()
 * Create a new repository
 * Add your project to the repo using [these instructions](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/). Vue-CLI has already initialized the project so you can start with step 5. You can also do these steps through the UI of VS code except for step 8.
 
+# Setup Heroku
+The goal of this step is to have your project run in the cloud so that it can be accessed anywhere from the internet. We are going to use [Heroku](https://www.heroku.com/) as a service provider.
+
+* Create a Heroku account. Check if you can use the student pack to get more free service.
+* Create a new App.
+* In your *package.json* set the Node.js engine
+```javascript
+  "engines": {
+    "node": "8.12.0"
+  },
+```
+* Add a start script and a postinstall script to  your *package.json*
+```javascript
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "start": "node server.js",
+    "lint": "vue-cli-service lint",
+    "postinstall": "npm run build"
+  },
+```
+
+* Commit and push your changes
+* As a deployment method choose Github
+* Look for your user name and project
+* Enable automatic deploys
+* Open the app in the browser and make sure that it works.
+* Add your Heroku app as a referrer for google Maps
+
+
 
