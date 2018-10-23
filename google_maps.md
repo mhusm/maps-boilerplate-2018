@@ -192,3 +192,11 @@ Tie it to a marker so that it opens when the marker is clicked.
       infowindow.open(this.map, marker);
     }); 
 ```
+You can add CSS styles to the info window.
+```javascript
+const contentString = `<div>
+  <h1 style="color: blue">Mein Titel</h1>
+  <div>Mein Text...</div> 
+</div>`
+```
+
