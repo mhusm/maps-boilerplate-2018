@@ -232,6 +232,8 @@ let polyline = new google.maps.Polyline({
   map: this.map
 });
 ```
+![Polyline](/public/line.png)
+
 Using the same coordinate from above, we can also create a polygon.
 ```javascript
 let polygon = new google.maps.Polygon({
@@ -244,6 +246,10 @@ let polygon = new google.maps.Polygon({
   map: this.map
 });
 ```
+![Polygon](/public/polygon.png)
 
+## Overlays
+You can overlay images onto the map. Follow [the instructions](https://developers.google.com/maps/documentation/javascript/examples/groundoverlay-simple)
 
+![Overlay](/public/overlay.png)
 
