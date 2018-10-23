@@ -10,6 +10,7 @@ versioning control and sharing the code
 ### Heroku
 
 ## Getting started with the project
+using VS code?
 
 ## Looking at the project in the browser
 
