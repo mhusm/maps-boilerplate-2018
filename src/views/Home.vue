@@ -10,6 +10,7 @@
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
 import style from "@/styles.js";
+import SnazzyInfoWindow from 'snazzy-info-window'
 
 export default {
   name: "home",
@@ -26,23 +27,21 @@ export default {
     };
 
     this.map = new google.maps.Map(element, options);
-    let marker = new google.maps.Marker({
-        position: {lat: 47.070978, lng: 8.282165},
-        icon: 'icon.png',
-        map: this.map
-    });
-    const contentString = `<div>
-      <h1>Mein Titel</h1>
-      <div>Mein Text...</div> 
-    </div>`
-    let infowindow = new google.maps.InfoWindow({
-      content: contentString
-    });
-
-    marker.addListener('click', event => {
-      infowindow.open(this.map, marker);
-    }); 
-
+    const plcoords = [
+      {lat: 47.071978, lng: 8.262165 },
+      {lat: 47.072978, lng: 8.292165 },
+      {lat: 47.073978, lng: 8.292165 },
+      {lat: 47.074978, lng: 8.282165 }
+    ];
+let polygon = new google.maps.Polygon({
+  path: plcoords,
+  strokeColor: '#4286f4',
+  strokeOpacity: 1.0,
+  strokeWeight: 2,
+  fillColor: '#FF0000',
+  fillOpacity: 0.35,
+  map: this.map
+});
   }
 
 
@@ -51,6 +50,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
 #map {
   height: 80vh;
   width: 80vw;

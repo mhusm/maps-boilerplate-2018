@@ -10,9 +10,11 @@
     "postinstall": "npm run build"
   },
   "dependencies": {
+    "@vue/cli-service": "^3.0.4",
     "contentful": "^7.0.4",
     "express": "^4.16.3",
-    "@vue/cli-service": "^3.0.4",
+    "save": "^2.3.2",
+    "snazzy-info-window": "^1.1.1",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
   },
