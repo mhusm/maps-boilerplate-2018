@@ -26,7 +26,7 @@ of the water and its labels. Try this in your *Home.vue* file inside the *mounte
         zoom: 14,
         center: new google.maps.LatLng(47.071467, 8.277621),
         styles: styles
-    }
+    };
 
     this.map = new google.maps.Map(element, options);
   }
@@ -93,7 +93,7 @@ import mystyle from "@/styles.js";
         zoom: 14,
         center: new google.maps.LatLng(47.071467, 8.277621),
         styles: mystyle
-    }
+    };
 
     this.map = new google.maps.Map(element, options);
   }
@@ -104,6 +104,22 @@ To add a default marker use the following code inside the *mounted* function, bu
 ```javascript
     let marker = new google.maps.Marker({
         position: {lat: 47.070978, lng: 8.282165},
+        map: this.map
+    });
+```
+You can add your own custom icon to a marker by providing a URL for an image.
+```javascript
+    let marker = new google.maps.Marker({
+        position: {lat: 47.070978, lng: 8.282165},
+        icon: 'http://icons.iconarchive.com/icons/iconsmind/outline/64/Bicycle-icon.png',
+        map: this.map
+    });
+```
+You can also create your own icon and store in the *public* folder. Then, you don't need to provide the full path.
+```javascript
+    let marker = new google.maps.Marker({
+        position: {lat: 47.070978, lng: 8.282165},
+        icon: 'myicon.png',
         map: this.map
     });
 ```
