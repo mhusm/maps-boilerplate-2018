@@ -8,7 +8,8 @@ of the water and its labels. Try this in your *Home.vue* file inside the *mounte
 ```javascript
   mounted: function(){
     const element = document.getElementById("map")
-    const styles = [
+    const styles = 
+    [
     {
       featureType: 'water',
       elementType: 'geometry',
@@ -53,3 +54,5 @@ Possible elements to style are
 
 
 You can find more details in [the maps documentation](https://developers.google.com/maps/documentation/javascript/style-reference).
+
+Google Maps offers [a tool](https://mapstyle.withgoogle.com/) to help with styling. This will generate the styles for your. The code that is generated is quite long. We could just replace lines 12 to 22 in the example above with the generated code. However, this will make the code a bit hard to read. That is why we move that code to a separate file and import it.
