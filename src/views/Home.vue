@@ -26,21 +26,22 @@ export default {
     };
 
     this.map = new google.maps.Map(element, options);
-
-    const locations = [
-      {lat: 47.071978, lng: 8.262165 },
-      {lat: 47.072978, lng: 8.292165 },
-      {lat: 47.073978, lng: 8.292165 },
-      {lat: 47.074978, lng: 8.282165 }
-    ];
-    let markers = [];
-      locations.map(loc => {
-      markers.push(new google.maps.Marker({
-        position: {lat: loc.lat, lng: loc.lng},
+    let marker = new google.maps.Marker({
+        position: {lat: 47.070978, lng: 8.282165},
+        icon: 'icon.png',
         map: this.map
-      }));
+    });
+    const contentString = `<div>
+      <h1>Mein Titel</h1>
+      <div>Mein Text...</div> 
+    </div>`
+    let infowindow = new google.maps.InfoWindow({
+      content: contentString
     });
 
+    marker.addListener('click', event => {
+      infowindow.open(this.map, marker);
+    }); 
 
   }
 
