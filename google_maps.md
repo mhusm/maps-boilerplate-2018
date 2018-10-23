@@ -124,6 +124,18 @@ You can also create your own icon and store in the *public* folder. Then, you do
     });
 ```
 
+### Adding an removing markers dynamically
+Use the `setMap` function to add a marker to a map dynamically.
+```javascript
+marker.setMap(this.map);
+```
+To remove the marker, pass in `null` as an argument.
+```javascript
+marker.setMap(null);
+```
+
+
+
 ## Finding coordinates
 To find the coordinate of a location, open Google Maps. Right click on the location and choose *What's here?* from the menu.
 ![Finding coordinates on a map](/public/coordinates.PNG)
