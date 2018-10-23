@@ -104,6 +104,7 @@ import mystyle from "@/styles.js";
 ```
 
 ## Markers
+Markers are documente [here](https://developers.google.com/maps/documentation/javascript/markers).
 To add a default marker use the following code inside the *mounted* function, but after you have created the map.
 ```javascript
     let marker = new google.maps.Marker({
@@ -131,6 +132,8 @@ You can also create your own icon and store in the *public* folder. Then, you do
         map: this.map
     });
 ```
+
+
 
 ### Adding an removing markers dynamically
 Use the `setMap` function to add a marker to a map dynamically.
@@ -160,8 +163,26 @@ let markers = [];
 });
 ```
 
-
-
 ## Finding coordinates
 To find the coordinate of a location, open Google Maps. Right click on the location and choose *What's here?* from the menu.
 ![Finding coordinates on a map](/public/coordinates.PNG)
+
+## Info windows
+Info windows can show more information on a location, for example, after a marker has been clicked. They are documented [here](https://developers.google.com/maps/documentation/javascript/infowindows).
+![Info window](/public/infowindow.png)
+Define the content of an info window.
+```javascript
+const contentString = `<div>
+  <h1>Mein Titel</h1>
+  <div>Mein Text...</div> 
+</div>`
+let infowindow = new google.maps.InfoWindow({
+  content: contentString
+});
+```
+Tie it to a marker so that it opens when the marker is clicked.
+```javascript
+    marker.addListener('click', event => {
+      infowindow.open(this.map, marker);
+    }); 
+```
