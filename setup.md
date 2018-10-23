@@ -1,5 +1,5 @@
 # Techstack Setup for Studio Web/Mobile 2018
-These setup instructions are aimed students of [Digital Ideation](https://www.hslu.ch/en/lucerne-school-of-information-technology/degree-programs/bachelor/digital-ideation/) taking the Studio Web/Mobile 2018 course. The following 
+These setup instructions are aimed students of [Digital Ideation](https://www.hslu.ch/en/lucerne-school-of-information-technology/degree-programs/bachelor/digital-ideation/) taking the Studio Web/Mobile 2018 course. The following figure illustrates our stack.
 ![Techstack](/public/techstack.png "Techstack")
 
 You need to do the setup once per group. The following instructions assume that you have a technical background. To see the instructions on how to use the projects that your team mate has created go here TODO.
