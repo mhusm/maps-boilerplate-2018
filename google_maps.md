@@ -200,3 +200,17 @@ const contentString = `<div>
 </div>`
 ```
 
+### Snazzy Info Window
+To create a more info window, you can use a libary like [Snazzy Info Window](https://github.com/atmist/snazzy-info-window). To add it to this project, do the following steps.
+* Install the libary from npm: $ npm install snazzy-info-window -- save
+* Import it into *Home.vue*
+```javascript
+import SnazzyInfoWindow from 'snazzy-info-window'
+```
+* Import the styles globally inside *App.vue*
+```javascript
+<style lang="scss">
+@import '../node_modules/snazzy-info-window/dist/snazzy-info-window.scss';
+```
+
+
