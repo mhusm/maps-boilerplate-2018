@@ -30,6 +30,8 @@ of the water and its labels. Try this in your *Home.vue* file inside the *mounte
     this.map = new google.maps.Map(element, options);
   }
 ```
+The colours in this example are set in hexadecimal format, indicated by the #. You can use a tool to help find the colour codes, for example [this one by Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool). But there are many others that you can find with a quick search.
+
 Possible features that you can style are
 * all
 * administrative
