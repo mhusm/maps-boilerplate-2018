@@ -134,6 +134,24 @@ To remove the marker, pass in `null` as an argument.
 marker.setMap(null);
 ```
 
+### Adding multiple markers in one go
+You can add multiple markers with different locations like this:
+```javascript
+const locations = [
+  {lat: 47.071978, lng: 8.262165 },
+  {lat: 47.072978, lng: 8.292165 },
+  {lat: 47.073978, lng: 8.292165 },
+  {lat: 47.074978, lng: 8.282165 }
+];
+let markers = [];
+  locations.map(loc => {
+  markers.push(new google.maps.Marker({
+     position: {lat: loc.lat, lng: loc.lng},
+     map: this.map
+  }));
+});
+```
+
 
 
 ## Finding coordinates
