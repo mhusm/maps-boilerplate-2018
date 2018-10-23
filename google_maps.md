@@ -55,4 +55,25 @@ Possible elements to style are
 
 You can find more details in [the maps documentation](https://developers.google.com/maps/documentation/javascript/style-reference).
 
+## Using a tool and a separate file for the styles
 Google Maps offers [a tool](https://mapstyle.withgoogle.com/) to help with styling. This will generate the styles for your. The code that is generated is quite long. We could just replace lines 12 to 22 in the example above with the generated code. However, this will make the code a bit hard to read. That is why we move that code to a separate file and import it.
+* In the folder *src* create a file named *style.js*
+* Copy the code from the tool into a variable named *style* so that it looks like this.
+```javacript
+let style = [
+    {
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#f5f5f5"
+        }
+      ]
+    },
+...
+    }
+  ];
+```
+* Export the *style* variable by adding the following line to the file
+```javacript
+export default style;
+```
