@@ -98,3 +98,5 @@ import mystyle from "@/styles.js";
     this.map = new google.maps.Map(element, options);
   }
 ```
+
+## Markers
