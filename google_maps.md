@@ -3,7 +3,7 @@
 ## Custom Styles
 
 You can change the colour of map elemens by passing a style option when you create the map. The following example changes the colour
-of the water and its labels. Try this in your *Home.vue* file.
+of the water and its labels. Try this in your *Home.vue* file inside the *mounted* function which should be there already.
 
 ```javascript
   mounted: function(){
