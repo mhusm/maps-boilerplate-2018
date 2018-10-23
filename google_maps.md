@@ -59,8 +59,8 @@ You can find more details in [the maps documentation](https://developers.google.
 Google Maps offers [a tool](https://mapstyle.withgoogle.com/) to help with styling. This will generate the styles for your. The code that is generated is quite long. We could just replace lines 12 to 22 in the example above with the generated code. However, this will make the code a bit hard to read. That is why we move that code to a separate file and import it.
 * In the folder *src* create a file named *style.js*
 * Copy the code from the tool into a variable named *style* so that it looks like this.
-```javacript
-let style = [
+```javascript
+let mystyle = [
     {
       "elementType": "geometry",
       "stylers": [
@@ -74,6 +74,27 @@ let style = [
   ];
 ```
 * Export the *style* variable by adding the following line to the file
-```javacript
-export default style;
+```javascript
+export default mystyle;
+```
+* Import the new file in *Home.vue*
+```javascript
+<script>
+// @ is an alias to /src
+import HelloWorld from "@/components/HelloWorld.vue";
+import mystyle from "@/styles.js";
+```
+* Use the new style
+```javascript
+   mounted: function(){
+    const element = document.getElementById("map")
+ 
+    const options = {
+        zoom: 14,
+        center: new google.maps.LatLng(47.071467, 8.277621),
+        styles: mystyle
+    }
+
+    this.map = new google.maps.Map(element, options);
+  }
 ```
