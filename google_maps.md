@@ -100,3 +100,10 @@ import mystyle from "@/styles.js";
 ```
 
 ## Markers
+To add a default marker use the following code inside the *mounted* function, but after you have created the map.
+```javascript
+    let marker = new google.maps.Marker({
+        position: {lat: 47.070978, lng: 8.282165},
+        map: this.map
+    });
+```
