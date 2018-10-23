@@ -13,6 +13,6 @@ app.get('/', function (req, res) {
 // serve all files in dist
 app.use(express.static('dist'));
 
-http.listen(process.env.PORT || 8090, function(){
+http.listen(process.env.PORT || 8080, function(){
     console.log(`listening on *: ${http.address().port}`);
 });

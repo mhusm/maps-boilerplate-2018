@@ -27,11 +27,21 @@ export default {
 
     this.map = new google.maps.Map(element, options);
 
-    let marker = new google.maps.Marker({
-        position: {lat: 47.070978, lng: 8.282165},
-        icon: 'icon.png',
+    const locations = [
+      {lat: 47.071978, lng: 8.262165 },
+      {lat: 47.072978, lng: 8.292165 },
+      {lat: 47.073978, lng: 8.292165 },
+      {lat: 47.074978, lng: 8.282165 }
+    ];
+    let markers = [];
+      locations.map(loc => {
+      markers.push(new google.maps.Marker({
+        position: {lat: loc.lat, lng: loc.lng},
         map: this.map
+      }));
     });
+
+
   }
 
 
