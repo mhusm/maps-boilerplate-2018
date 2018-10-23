@@ -16,13 +16,17 @@ using VS code?
 
 ## Changing the style
 
-## Adding an image
-
 ## Sharing my changes with the my team
 -conflicts? (add a link to merging)
 
 ## Getting changes from my team
 -conflicts? (add a link to merging)
+
+## Changing the content
+when to use CMS, when to edit the source
+### Changing text
+### Changing text using the CMS
+### Adding an image
 
 ## Adding a location to the map
 
