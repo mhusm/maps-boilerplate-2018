@@ -9,6 +9,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
+import style from "@/styles.js";
 
 export default {
   name: "home",
@@ -17,12 +18,22 @@ export default {
   },
   mounted: function(){
     const element = document.getElementById("map")
+ 
     const options = {
         zoom: 14,
-        center: new google.maps.LatLng(47.071467, 8.277621)
-    }
+        center: new google.maps.LatLng(47.071467, 8.277621),
+        styles: style
+    };
+
     this.map = new google.maps.Map(element, options);
+
+    let marker = new google.maps.Marker({
+        position: {lat: 47.070978, lng: 8.282165},
+        icon: 'icon.png',
+        map: this.map
+    });
   }
+
 
 };
 </script>
