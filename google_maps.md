@@ -123,3 +123,7 @@ You can also create your own icon and store in the *public* folder. Then, you do
         map: this.map
     });
 ```
+
+## Finding coordinates
+To find the coordinate of a location, open Google Maps. Right click on the location and choose *What's here?* from the menu.
+![Finding coordinates on a map](/public/coordinates.PNG)
