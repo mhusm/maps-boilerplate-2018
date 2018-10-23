@@ -200,3 +200,50 @@ const contentString = `<div>
 </div>`
 ```
 
+### Snazzy Info Window
+To create a more info window, you can use a libary like [Snazzy Info Window](https://github.com/atmist/snazzy-info-window). To add it to this project, do the following steps.
+* Install the libary from npm: $ npm install snazzy-info-window -- save
+* Import it into *Home.vue*
+```javascript
+import SnazzyInfoWindow from 'snazzy-info-window'
+```
+* Import the styles globally inside *App.vue*
+```javascript
+<style lang="scss">
+@import '../node_modules/snazzy-info-window/dist/snazzy-info-window.scss';
+```
+* Follow the instructions on the Snazzy website to use the library.
+
+## Drawing shapes
+You can draw [lines](https://developers.google.com/maps/documentation/javascript/shapes#polylines) and [shapes](https://developers.google.com/maps/documentation/javascript/shapes#polygons) onto the map.
+To draw a set of connected lines (a polyline), use the following code.
+```javascript
+const plcoords = [
+  {lat: 47.071978, lng: 8.262165 },
+  {lat: 47.072978, lng: 8.292165 },
+  {lat: 47.073978, lng: 8.292165 },
+  {lat: 47.074978, lng: 8.282165 }
+];
+let polyline = new google.maps.Polyline({
+  path: plcoords,
+  strokeColor: '#FF0000',
+  strokeOpacity: 1.0,
+  strokeWeight: 2,
+  map: this.map
+});
+```
+Using the same coordinate from above, we can also create a polygon.
+```javascript
+let polygon = new google.maps.Polygon({
+  path: plcoords,
+  strokeColor: '#4286f4',
+  strokeOpacity: 1.0,
+  strokeWeight: 2,
+  fillColor: '#FF0000',
+  fillOpacity: 0.35,
+  map: this.map
+});
+```
+
+
+
