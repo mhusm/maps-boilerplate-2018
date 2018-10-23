@@ -19,8 +19,10 @@ using VS code?
 ## Adding an image
 
 ## Sharing my changes with the my team
+-conflicts? (add a link to merging)
 
 ## Getting changes from my team
+-conflicts? (add a link to merging)
 
 ## Adding a location to the map
 
