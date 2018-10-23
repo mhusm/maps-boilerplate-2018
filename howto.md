@@ -3,9 +3,11 @@
 ## Our techstack - a short introduction
 
 ### Dev Server
-### Heroku
+
 ### Contentful
 ### Git and Github
+versioning control and sharing the code
+### Heroku
 
 ## Getting started with the project
 
