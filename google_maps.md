@@ -31,6 +31,8 @@ of the water and its labels. Try this in your *Home.vue* file inside the *mounte
     this.map = new google.maps.Map(element, options);
   }
 ```
+![styled map](/public/styles.png)
+
 The colours in this example are set in hexadecimal format, indicated by the #. You can use a tool to help find the colour codes, for example [this one by Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool). But there are many others that you can find with a quick search.
 
 Possible features that you can style are
@@ -56,7 +58,9 @@ Possible elements to style are
 You can find more details in [the maps documentation](https://developers.google.com/maps/documentation/javascript/style-reference).
 
 ## Using a tool and a separate file for the styles
-Google Maps offers [a tool](https://mapstyle.withgoogle.com/) to help with styling. This will generate the styles for your. The code that is generated is quite long. We could just replace lines 12 to 22 in the example above with the generated code. However, this will make the code a bit hard to read. That is why we move that code to a separate file and import it.
+Google Maps offers [a tool](https://mapstyle.withgoogle.com/) to help with styling. 
+![map styling tool](/public/tool.png)
+This will generate the styles for your. The code that is generated is quite long. We could just replace lines 12 to 22 in the example above with the generated code. However, this will make the code a bit hard to read. That is why we move that code to a separate file and import it.
 * In the folder *src* create a file named *style.js*
 * Copy the code from the tool into a variable named *mystyle* so that it looks like this.
 ```javascript
@@ -107,6 +111,8 @@ To add a default marker use the following code inside the *mounted* function, bu
         map: this.map
     });
 ```
+![marker](/public/marker.png)
+
 You can add your own custom icon to a marker by providing a URL for an image.
 ```javascript
     let marker = new google.maps.Marker({
@@ -115,6 +121,8 @@ You can add your own custom icon to a marker by providing a URL for an image.
         map: this.map
     });
 ```
+![custom marker](/public/custom.png)
+
 You can also create your own icon and store in the *public* folder. Then, you don't need to provide the full path.
 ```javascript
     let marker = new google.maps.Marker({
