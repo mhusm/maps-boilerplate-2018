@@ -86,7 +86,7 @@ http.listen(process.env.PORT || 8090, function(){
 The goal of this step is to add Google Maps to your project.
 
 ### Getting an API key
-* Follow the instructions in the Email received from me.
+* We have received a Google Cloud Platform Education Grant. Follow the instructions in the Email received from me to get your credit.
 * Go to the [Google Cloud platform console](https://console.cloud.google.com/)
 * Create a new project
 * Enable the Maps Javascript API
