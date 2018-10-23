@@ -29,6 +29,7 @@ when to use CMS, when to edit the source
 ### Adding an image
 
 ## Adding a location to the map
+link to the other file
 
 ## Testing the project on a mobile device
 ### Device emulation on the desktop
