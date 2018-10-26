@@ -85,21 +85,3 @@ Git tracks your changes and VS code displays this information. Now that you have
 * Remember to regualarly pull in changes from your team.
 * If you and your team mate change the same piece of code, there can be conflicts that need to be merged. VS Code also helps us with that. You will have to decide, which changes you want to take from which user. 
 
-
-## Changing the content
-when to use CMS, when to edit the source
-### Changing text
-### Changing text using the CMS
-### Adding an image
-
-## Adding a location to the map
-link to the other file
-
-## Testing the project on a mobile device
-### Device emulation on the desktop
-* Emulating the location
-### Connecting a real device
-### Debugging with a real device
-
-
-
