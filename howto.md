@@ -4,7 +4,7 @@
 ![Techstack](/public/techstack.png "Techstack")
 
 ### Contentful
-We use [Contentful](https://www.contentful.com/) as our content management system (CMS). In the CMS you can manage any content that is used in your application, for example images and text, but also coordinates for the map. Having a CMS means we don't have to change the code just to add a new image or change a text.
+We use [Contentful](https://www.contentful.com/) as our content management system (CMS). In the CMS you can manage any content that is used in your application, for example images and text, but also coordinates for the map. Having a CMS means we don't have to change the code just to add a new image or change a text. Learn more about Contentful in their [Beginner's guide](https://www.contentful.com/r/knowledgebase/contentful-101/).
 
 ### Vue.js and Sass
 Many modern web application are written in a JavaScript framework like [Vue.js](https://vuejs.org/). These framework try to make it easier for developers to create user interfaces. Vue.js is similar to React and Angular, but has a reputation of being easy to learn. We also use [Sass](https://sass-lang.com/) which is an extension of CSS.
