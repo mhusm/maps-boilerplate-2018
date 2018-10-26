@@ -80,12 +80,11 @@ Git tracks your changes and VS code displays this information. Now that you have
 * Your changes are now staged. That means ready to be commited.
 * Add a message. This helps your team mates (and yourself in the future) understand why you made changes. 
 * Commit your changes by pressing the checkmark button. Or changes are now commited to your local Git repository, which is on your computer.
-* To share the changes with your team and to pull in new changes from your team, press the Synchronize button at the bottom of the screen ![Git synchronize](/public/sync.PNG)
+* To share the changes with your team and to pull in new changes from your team, press the Synchronize button at the bottom of the screen 
+![Git synchronize](/public/sync.PNG)
+* Remember to regualarly pull in changes from your team.
+* If you and your team mate change the same piece of code, there can be conflicts that need to be merged. VS Code also helps us with that. You will have to decide, which changes you want to take from which user. 
 
--conflicts? (add a link to merging)
-
-## Getting changes from my team
--conflicts? (add a link to merging)
 
 ## Changing the content
 when to use CMS, when to edit the source
