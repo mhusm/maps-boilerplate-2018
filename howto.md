@@ -23,6 +23,12 @@ We store our Git repositories here on [Github](https://github.com/). Github can 
 ## Getting started with the project
 The goal of the following steps is to have to project set up on your machine so you can start working.
 
+### Install Git
+* [Git](https://git-scm.com/)
+
+### Install Node.js
+* [Node.js](https://nodejs.org/en/), choose the LTS version.
+
 ### Install Visual Studio Code
 Visual Studio Code](https://code.visualstudio.com/) is an integrated development environment (IDE) for web development. It has editors for writing code but also helps you with other tasks like using Git. 
 * Install VS Code (unless you already have your preferred IDE).
@@ -32,6 +38,15 @@ Visual Studio Code](https://code.visualstudio.com/) is an integrated development
 * (Optional) sign up for the [student pack](https://education.github.com/pack).
 * Generate an SSH key following [these instructions](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 * Ask your team mate who created the project to add you as a project member on Github.
+
+### Clone the project from Github
+* Open VS Code.
+* Open the folder where you want to have your project.
+* Go to the project on Github and press the green *Copy or Download* button. Copy the SSH URL.
+* In VS Code open a terminal (View=>Terminal). In a terminal we can execute commands.
+* Execute the following command in the terminal: git clone <your project url>
+* Now you should have your project in VS code and you can look at the files.
+
 
 
 ## Looking at the project in the browser
