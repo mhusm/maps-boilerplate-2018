@@ -13,7 +13,8 @@ To get to know Vue in more depth, go through the following resources>
 You may want to install the [Vue.js devtool Chrome extension](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
 
 ## Contentful Resources
-* [Getting started](https://www.contentful.com/developers/docs/javascript/tutorials/using-js-cda-sdk/)
+* [The beginner's guide to Contentful](https://www.contentful.com/r/knowledgebase/contentful-101/)
+* [Getting started with the API](https://www.contentful.com/developers/docs/javascript/tutorials/using-js-cda-sdk/)
 * [Contentful Delivery API documentation](https://www.contentful.com/developers/docs/references/content-delivery-api/)
 * [Images API](https://www.contentful.com/developers/docs/references/images-api/#/reference)
 
