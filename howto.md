@@ -71,7 +71,7 @@ We will look at VS Code and project together in the class. You can also have a l
 ## Sharing my changes with the my team
 Git tracks your changes and VS code displays this information. Now that you have changed the project, you should see a blue icon with a number on the right.
 
-![Git changes](/public/changes.png)
+![Git changes](/public/changes.PNG)
 
 * Go the source control view (by clicking on the icon)
 * Here you can see all the files that have changed or have been added/removed.
@@ -80,7 +80,7 @@ Git tracks your changes and VS code displays this information. Now that you have
 * Your changes are now staged. That means ready to be commited.
 * Add a message. This helps your team mates (and yourself in the future) understand why you made changes. 
 * Commit your changes by pressing the checkmark button. Or changes are now commited to your local Git repository, which is on your computer.
-* To share the changes with your team and to pull in new changes from your team, press the Synchronize button at the bottom of the screen ![Git synchronize](/public/sync.png)
+* To share the changes with your team and to pull in new changes from your team, press the Synchronize button at the bottom of the screen ![Git synchronize](/public/sync.PNG)
 
 -conflicts? (add a link to merging)
 
