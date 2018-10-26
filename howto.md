@@ -1,4 +1,11 @@
-# How to do \*things\* in the project
+# How to do \*things\* in the project <!-- omit in toc --> - [Changing the content](#changing-the-content)
+- [Changing the content](#changing-the-content)
+- [Adding a location to the map](#adding-a-location-to-the-map)
+- [Using the location of a (mobile) device](#using-the-location-of-a-mobile-device)
+- [Testing the project on a mobile device](#testing-the-project-on-a-mobile-device)
+    - [Device emulation on the desktop](#device-emulation-on-the-desktop)
+    - [Connecting a real device](#connecting-a-real-device)
+    - [Debugging with a real device](#debugging-with-a-real-device)
 
 ## Changing the content
 You can add, remove or change text and images directly in the soure code by editing the HTML templates in the .vue files.

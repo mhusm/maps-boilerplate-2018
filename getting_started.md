@@ -1,5 +1,5 @@
 
-# Getting started in Studio Web/Mobile 2018
+# Getting started in Studio Web/Mobile 2018 <!-- omit in toc --> 
 - [Our techstack - a short introduction](#our-techstack---a-short-introduction)
     - [Contentful](#contentful)
     - [Vue.js and Sass](#vuejs-and-sass)

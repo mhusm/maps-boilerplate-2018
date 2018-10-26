@@ -1,4 +1,9 @@
-# Introduction to Vue and advanced JavaScript
+# Introduction to Vue and advanced JavaScript <!-- omit in toc --> 
+- [Vue](#vue)
+    - [Tooling](#tooling)
+- [Contentful Resources](#contentful-resources)
+- [Task](#task)
+- [JavaScript Resources](#javascript-resources)
 
 ## Vue
 Get familiar with Vue. 
