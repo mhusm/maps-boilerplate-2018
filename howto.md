@@ -58,9 +58,30 @@ The project uses libraries (like Vue.js) that have to downloaded and installed.
 * Open the  URL in a browser.
 * **TADA!**
 
+## Getting to know VS Code and Project
+We will look at VS Code and project together in the class. You can also have a look at this [introduction to VS Code](https://code.visualstudio.com/docs/getstarted/userinterface).
+* Install the Vue.js plugin.
+
 ## Changing the style
+* In the project open the file *App.vue*
+* In this file, you can change CSS that will be applied to the whole application.
+* Make some changes to the CSS, for example, change the background-color
+* Have a look at the application in the browser.
 
 ## Sharing my changes with the my team
+Git tracks your changes and VS code displays this information. Now that you have changed the project, you should see a blue icon with a number on the right.
+
+![Git changes](/public/changes.png)
+
+* Go the source control view (by clicking on the icon)
+* Here you can see all the files that have changed or have been added/removed.
+* Select the file that you have changed and review the changes.
+* If you are happy with all your changes, hover with over the *Changes* line, where a *+* should appear. Press the *+*.
+* Your changes are now staged. That means ready to be commited.
+* Add a message. This helps your team mates (and yourself in the future) understand why you made changes. 
+* Commit your changes by pressing the checkmark button. Or changes are now commited to your local Git repository, which is on your computer.
+* To share the changes with your team and to pull in new changes from your team, press the Synchronize button at the bottom of the screen ![Git synchronize](/public/sync.png)
+
 -conflicts? (add a link to merging)
 
 ## Getting changes from my team
