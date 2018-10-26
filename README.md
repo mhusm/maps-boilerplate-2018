@@ -6,6 +6,7 @@ This content of this repository was developed for students of [Digital Ideation]
 * [Getting started guide for everyone](getting_started.md)
 * [How to guide](howto.md) 
 * [Google Maps guide](google_maps.md)
+* [Vue.js and JavaScript resources](vue_and_js.md)
 
 ## Project setup
 ```
