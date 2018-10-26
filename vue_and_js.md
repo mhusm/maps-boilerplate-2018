@@ -21,6 +21,9 @@ You may want to install the [Vue.js devtool Chrome extension](https://chrome.goo
 * [Getting started](https://www.contentful.com/developers/docs/javascript/tutorials/using-js-cda-sdk/)
 * [Contentful Delivery API documentation](https://www.contentful.com/developers/docs/references/content-delivery-api/)
 
+## Task
+< After you have made yourself familar with Vue, import some content from Contentful and display it in your application. You may have to add the content first.
+
 
 ## JavaScript Resources
 The [Mozilla Developer Network](https://developer.mozilla.org) offers excellent introductions and guides to JavaScript concepts and browser API. I recommend in particular the following ones for this course.
