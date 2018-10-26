@@ -22,7 +22,7 @@ You may want to install the [Vue.js devtool Chrome extension](https://chrome.goo
 * [Contentful Delivery API documentation](https://www.contentful.com/developers/docs/references/content-delivery-api/)
 
 ## Task
-< After you have made yourself familar with Vue, import some content from Contentful and display it in your application. You may have to add the content first.
+> After you have made yourself familar with Vue, import some content from Contentful and display it in your application. You may have to add the content first.
 
 
 ## JavaScript Resources
