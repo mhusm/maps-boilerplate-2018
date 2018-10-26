@@ -15,7 +15,7 @@ You may want to install the [Vue.js devtool Chrome extension](https://chrome.goo
 ## Contentful Resources
 * [Getting started](https://www.contentful.com/developers/docs/javascript/tutorials/using-js-cda-sdk/)
 * [Contentful Delivery API documentation](https://www.contentful.com/developers/docs/references/content-delivery-api/)
-* [Image API](https://www.contentful.com/developers/docs/references/images-api/#/reference)
+* [Images API](https://www.contentful.com/developers/docs/references/images-api/#/reference)
 
 ## Task
 > After you have made yourself familar with Vue, import some content from Contentful and display it in your application. You may have to add the content first.
