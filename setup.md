@@ -15,12 +15,12 @@
 - [Push your project to Github](#push-your-project-to-github)
 - [Setup Heroku](#setup-heroku)
 
+## About this guide
 These setup instructions are for students of [Digital Ideation](https://www.hslu.ch/en/lucerne-school-of-information-technology/degree-programs/bachelor/digital-ideation/) taking the Studio Web/Mobile 2018 course. The following figure illustrates our stack.
 ![Techstack](/public/techstack.png "Techstack")
 
 You need to do the setup once per group. The following instructions assume that you have a technical background. To see the instructions on how to use the projects that your team mate has created go the [Getting started guide](getting_started.md).
 
-## About this guide
 Instructions starting with *$* should be typed into a command line. 
 You can open a command window on Windows by pressing the windows key and typing *cmd*.
 
