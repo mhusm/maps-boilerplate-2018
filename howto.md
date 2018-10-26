@@ -32,5 +32,6 @@ You should also use a real device from time to time, for example to test the tou
 * To access the dev server, enter the URL that is displayed when you run the $npm run serve command. It should look something like this: http://192.168.1.146:8080/. It is possible that this will not work in the HSLU network and on some computers that have firewall restrictions.
 
 ### Debugging with a real device
-You can also access the browser developer tools for an application on your mobile device using remote debugging. Following [these instructions](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/) for Chrome and Android.
-
+You can also access the browser developer tools for an application on your mobile device using remote debugging. 
+* Follow [these instructions](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/) for Chrome and Android.
+* If you have an iOS device and a mac, you can try [these instructions](https://appletoolbox.com/2014/05/use-web-inspector-debug-mobile-safari/)
