@@ -9,11 +9,6 @@ To get to know Vue in more depth, go through the following resources>
 * [The Vue instance](https://vuejs.org/v2/guide/instance.html), in particular have a look the lifecycle methods
 * [Template syntax](https://vuejs.org/v2/guide/syntax.html)
 
-
-### Vue Resources
-* [Vue Router](https://router.vuejs.org/guide/#html): Routing for Vue single page apps
-
-
 ### Tooling
 You may want to install the [Vue.js devtool Chrome extension](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
 
@@ -35,3 +30,4 @@ The [Mozilla Developer Network](https://developer.mozilla.org) offers excellent 
 
 Other recommended resources
 * [ES6 modules](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
+* [Vue Router](https://router.vuejs.org/guide/#html): Routing for Vue single page apps
