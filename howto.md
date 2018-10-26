@@ -44,10 +44,13 @@ Visual Studio Code](https://code.visualstudio.com/) is an integrated development
 * Open the folder where you want to have your project.
 * Go to the project on Github and press the green *Copy or Download* button. Copy the SSH URL.
 * In VS Code open a terminal (View=>Terminal). In a terminal we can execute commands.
-* Execute the following command in the terminal: git clone <your project url>
+* Execute the following command in the terminal: *git clone <your project url>*
 * Now you should have your project in VS code and you can look at the files.
 
-
+### Install the project dependencies
+The project uses libraries (like Vue.js) that have to downloaded and installed.
+* In the terminal change in to the project folder: *cd <project folder name>*
+* Run the following command: *npm install*
 
 ## Looking at the project in the browser
 
