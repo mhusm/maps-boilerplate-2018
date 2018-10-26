@@ -27,6 +27,10 @@ Your browser can emulate a mobile device.
 * Read more about it in [the documentation](https://developers.google.com/web/tools/chrome-devtools/device-mode/)
 
 ### Connecting a real device
-### Debugging with a real device
+You should also use a real device from time to time, for example to test the touch interaction.
+* Because we continuously deploy the application to Heroku, you can access the application through the Heroku URL. If you don't know the URL, ask your team mate who set up the project (and put it in the readme on Github).
+* To access the dev server, enter the URL that is displayed when you run the $npm run serve command. It should look something like this: http://192.168.1.146:8080/. It is possible that this will not work in the HSLU network and on some computers that have firewall restrictions.
 
+### Debugging with a real device
+You can also access the browser developer tools for an application on your mobile device using remote debugging. Following [these instructions](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/) for Chrome and Android.
 
