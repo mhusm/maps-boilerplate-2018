@@ -18,7 +18,7 @@ You may want to install the [Vue.js devtool Chrome extension](https://chrome.goo
 * [Images API](https://www.contentful.com/developers/docs/references/images-api/#/reference)
 
 ## Task
-> After you have made yourself familar with Vue, import some content from Contentful and display it in your application. You may have to add the content first.
+> After you have made yourself familar with Vue, import some text content from Contentful and display it in your application. You may have to add the content first. Next add an image to Contentful and also add this to your application.
 
 
 ## JavaScript Resources
