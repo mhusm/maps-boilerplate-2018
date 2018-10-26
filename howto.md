@@ -9,15 +9,23 @@ To get started with Contentful use [this guide](https://www.contentful.com/r/kno
 When you introduce new content types that are not yet shown in the application, work together with the technical person in the team to set this up.
 
 ## Adding a location to the map
-link to the other file
+You can use the Location type in Contentful to store coordinates.
 
 ## Using the location of a (mobile) device
 You can access the geolocation of your users. They have to give you permission to do that.
 Use [this guide](https://developers.google.com/maps/documentation/javascript/geolocation) to learn how you can access the location from the browser. You can find further resources on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API).
 
 ## Testing the project on a mobile device
+If you are developing your project for a mobile device, you should do most of your testing on a mobile device. You have several options.
+
 ### Device emulation on the desktop
-* Emulating the location
+Your browser can emulate a mobile device.
+* In Chrome press ctrl/cmd + shift + i to open the developer tools
+* Toggle the mobile device emulation mode with the little device icon in the toolbar
+* In the device mode you can choose a predefined device or choose an arbitrary screen size.
+* You can also emulate geolocations.
+* Read more about it in [the documentation](https://developers.google.com/web/tools/chrome-devtools/device-mode/)
+
 ### Connecting a real device
 ### Debugging with a real device
 
