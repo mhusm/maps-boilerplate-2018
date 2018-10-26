@@ -1,4 +1,4 @@
-# How to do \*things\* in the project <!-- omit in toc --> - [Changing the content](#changing-the-content)
+# How to do \*things\* in the project <!-- omit in toc --> 
 - [Changing the content](#changing-the-content)
 - [Adding a location to the map](#adding-a-location-to-the-map)
 - [Using the location of a (mobile) device](#using-the-location-of-a-mobile-device)
