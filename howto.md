@@ -12,6 +12,8 @@ When you introduce new content types that are not yet shown in the application, 
 link to the other file
 
 ## Using the location of a (mobile) device
+You can access the geolocation of your users. They have to give you permission to do that.
+Use [this guide](https://developers.google.com/maps/documentation/javascript/geolocation) to learn how you can access the location from the browser. You can find further resources on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API).
 
 ## Testing the project on a mobile device
 ### Device emulation on the desktop
