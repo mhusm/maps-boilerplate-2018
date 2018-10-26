@@ -1,11 +1,24 @@
 # Techstack Setup for Studio Web/Mobile 2018 <!-- omit in toc --> 
+- [About this guide](#about-this-guide)
+- [Install Node.js or check your version](#install-nodejs-or-check-your-version)
+- [Install Git](#install-git)
+- [Creating a Vue.js project](#creating-a-vuejs-project)
+- [Using the Vue CLI service](#using-the-vue-cli-service)
+- [Setting up your development environment](#setting-up-your-development-environment)
+- [Creating a simple HTTP-Server for the deployment](#creating-a-simple-http-server-for-the-deployment)
+- [Adding Google maps](#adding-google-maps)
+  * [Getting an API key](#getting-an-api-key)
+  * [Adding a map to your Vue application](#adding-a-map-to-your-vue-application)
+- [Integrating the Contentful CMS](#integrating-the-contentful-cms)
+  * [Creating an account and a project](#creating-an-account-and-a-project)
+  * [Integrating Contentful in your Vue application](#integrating-contentful-in-your-vue-application)
+- [Push your project to Github](#push-your-project-to-github)
+- [Setup Heroku](#setup-heroku)
 
 These setup instructions are for students of [Digital Ideation](https://www.hslu.ch/en/lucerne-school-of-information-technology/degree-programs/bachelor/digital-ideation/) taking the Studio Web/Mobile 2018 course. The following figure illustrates our stack.
 ![Techstack](/public/techstack.png "Techstack")
 
-You need to do the setup once per group. The following instructions assume that you have a technical background. To see the instructions on how to use the projects that your team mate has created go here TODO.
-
-
+You need to do the setup once per group. The following instructions assume that you have a technical background. To see the instructions on how to use the projects that your team mate has created go the [Getting started guide](getting_started.md).
 
 ## About this guide
 Instructions starting with *$* should be typed into a command line. 
