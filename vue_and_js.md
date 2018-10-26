@@ -17,6 +17,11 @@ To get to know Vue in more depth, go through the following resources>
 ### Tooling
 You may want to install the [Vue.js devtool Chrome extension](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
 
+## Contentful Resources
+* [Getting started](https://www.contentful.com/developers/docs/javascript/tutorials/using-js-cda-sdk/)
+* [Contentful Delivery API documentation](https://www.contentful.com/developers/docs/references/content-delivery-api/)
+
+
 ## JavaScript Resources
 The [Mozilla Developer Network](https://developer.mozilla.org) offers excellent introductions and guides to JavaScript concepts and browser API. I recommend in particular the following ones for this course.
 * [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
