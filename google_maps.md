@@ -1,15 +1,14 @@
-# Styling Google Maps
-- [Styling Google Maps](#styling-google-maps)
-  - [Custom Styles](#custom-styles)
-  - [Using a tool and a separate file for the styles](#using-a-tool-and-a-separate-file-for-the-styles)
-  - [Markers](#markers)
-    - [Adding an removing markers dynamically](#adding-an-removing-markers-dynamically)
-    - [Adding multiple markers in one go](#adding-multiple-markers-in-one-go)
-  - [Finding coordinates](#finding-coordinates)
-  - [Info windows](#info-windows)
-    - [Snazzy Info Window](#snazzy-info-window)
-  - [Drawing shapes](#drawing-shapes)
-  - [Overlays](#overlays)
+# Styling Google Maps <!-- omit in toc --> 
+- [Custom Styles](#custom-styles)
+- [Using a tool and a separate file for the styles](#using-a-tool-and-a-separate-file-for-the-styles)
+- [Markers](#markers)
+  - [Adding an removing markers dynamically](#adding-an-removing-markers-dynamically)
+  - [Adding multiple markers in one go](#adding-multiple-markers-in-one-go)
+- [Finding coordinates](#finding-coordinates)
+- [Info windows](#info-windows)
+  - [Snazzy Info Window](#snazzy-info-window)
+- [Drawing shapes](#drawing-shapes)
+- [Overlays](#overlays)
 ## Custom Styles
 
 You can change the colour of map elemens by passing a style option when you create the map. The following example changes the colour
