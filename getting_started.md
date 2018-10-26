@@ -1,5 +1,5 @@
 
-# How to do \*things\* in Studio Web/Mobile 2018
+# Getting started in Studio Web/Mobile 2018
 ## Our techstack - a short introduction
 ![Techstack](/public/techstack.png "Techstack")
 
