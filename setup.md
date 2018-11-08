@@ -71,7 +71,7 @@ The goal of this step is to have an IDE setup so that you can work productively.
 The goal of this step is to have a simple HTTP server for static files that we can use when we deploy the app.
 We are going to use Node.js with the [Express framework](http://expressjs.com/).
 
-* npm install express -save
+* $ npm install express -save
 * In the top level of your project folder create a file named *server.js*
 * Add the following code to the file
 
