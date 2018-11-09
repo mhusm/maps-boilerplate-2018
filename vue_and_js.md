@@ -29,6 +29,7 @@ You may want to install the [Vue.js devtool Chrome extension](https://chrome.goo
 
 ## JavaScript Resources
 The [Mozilla Developer Network](https://developer.mozilla.org) offers excellent introductions and guides to JavaScript concepts and browser API. I recommend in particular the following ones for this course.
+* [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 * [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 * ES6 modules [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) and [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 * The [this operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
