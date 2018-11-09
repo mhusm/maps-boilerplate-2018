@@ -48,7 +48,7 @@ The goal of the following steps is to have to project set up on your machine so 
 * [Node.js](https://nodejs.org/en/), choose the LTS version.
 
 ### Install Visual Studio Code
-Visual Studio Code](https://code.visualstudio.com/) is an integrated development environment (IDE) for web development. It has editors for writing code but also helps you with other tasks like using Git. 
+[Visual Studio Code](https://code.visualstudio.com/) is an integrated development environment (IDE) for web development. It has editors for writing code but also helps you with other tasks like using Git. 
 * Install VS Code (unless you already have your preferred IDE).
 
 ### Get a Github account
