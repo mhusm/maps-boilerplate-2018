@@ -2,17 +2,36 @@
   <div class="file">
     <h1>Upload a file</h1>
     <input type="file" @change="uploadFile">
+    <img :src="imgSrc">
+    <button @click="upload">Upload</button>
    </div>
 </template>
 <script>
 
 export default {
   name: "file",
+  data: function() {
+      return {
+          imgSrc: "",
+          file: {}
+      }
+  },
   methods: {
     uploadFile: function(event) {
-      let file = event.target.files[0];
-      let fileName = file.name;
-      let contentType = file.type;
+      this.file = event.target.files[0];
+
+      let urlReader = new FileReader();
+      urlReader.onload = function(result) {
+          console.log(urlReader.result);
+          console.log(result);
+          this.imgSrc  = urlReader.result;
+      }.bind(this);
+      urlReader.readAsDataURL(this.file)
+
+    },
+    upload: function(){
+      let fileName = this.file.name;
+      let contentType = this.file.type;
       let reader = new FileReader();
       let spaceref;
       reader.onload = function(result) {
@@ -70,9 +89,16 @@ export default {
 
       // Read in the image file as a data URL.
       //     reader.readAsDataURL(event.target.files[0]);
-      reader.readAsArrayBuffer(event.target.files[0]);
-    },
+      reader.readAsArrayBuffer(this.file);
+
+    }
   }
  
 };
 </script>
+
+<style scoped>
+    img {
+        max-width: 60vw;
+    }
+</style>
