@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
+      <router-link to="/about">About this site</router-link> |
       <router-link to="/file">File upload</router-link>
     </div>
     <router-view/>
@@ -18,7 +18,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background: cornflowerblue;
+  background:rgb(228, 25, 59);
 }
 #nav {
   padding: 30px;
