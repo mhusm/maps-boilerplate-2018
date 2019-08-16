@@ -1,6 +1,6 @@
 # Introduction to Vue and advanced JavaScript <!-- omit in toc --> 
 - [Vue](#vue)
-    - [Tooling](#tooling)
+  - [Tooling](#tooling)
 - [Contentful Resources](#contentful-resources)
 - [Task](#task)
 - [JavaScript Resources](#javascript-resources)
@@ -35,7 +35,8 @@ The [Mozilla Developer Network](https://developer.mozilla.org) offers excellent 
 * ES6 modules [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) and [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 * The [this operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 * [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-
+* [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+* [Async functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 
 Other recommended resources
 * [ES6 modules](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
