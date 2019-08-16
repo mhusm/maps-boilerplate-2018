@@ -100,6 +100,6 @@ Git tracks your changes and VS code displays this information. Now that you have
 * Commit your changes by pressing the checkmark button. Or changes are now commited to your local Git repository, which is on your computer.
 * To share the changes with your team and to pull in new changes from your team, press the Synchronize button at the bottom of the screen 
 ![Git synchronize](/public/sync.PNG)
-* Remember to regualarly pull in changes from your team.
+* Remember to regularly pull in changes from your team.
 * If you and your team mate change the same piece of code, there can be conflicts that need to be merged. VS Code also helps us with that. You will have to decide, which changes you want to take from which user. 
 
