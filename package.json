@@ -12,7 +12,7 @@
   "dependencies": {
     "@vue/cli-service": "^3.0.4",
     "contentful": "^7.0.4",
-    "contentful-management": "^5.4.0",
+    "contentful-management": "^5.9.1",
     "express": "^4.16.3",
     "save": "^2.3.2",
     "snazzy-info-window": "^1.1.1",

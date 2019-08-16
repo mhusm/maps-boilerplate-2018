@@ -1,4 +1,4 @@
-# Techstack Setup for Studio Web/Mobile 2018 <!-- omit in toc --> 
+# Techstack Setup for Studio Web/Mobile 2019 <!-- omit in toc --> 
 - [About this guide](#about-this-guide)
 - [Install Node.js or check your version](#install-nodejs-or-check-your-version)
 - [Install Git](#install-git)
@@ -7,16 +7,16 @@
 - [Setting up your development environment](#setting-up-your-development-environment)
 - [Creating a simple HTTP-Server for the deployment](#creating-a-simple-http-server-for-the-deployment)
 - [Adding Google maps](#adding-google-maps)
-  * [Getting an API key](#getting-an-api-key)
-  * [Adding a map to your Vue application](#adding-a-map-to-your-vue-application)
+  - [Getting an API key](#getting-an-api-key)
+  - [Adding a map to your Vue application](#adding-a-map-to-your-vue-application)
 - [Integrating the Contentful CMS](#integrating-the-contentful-cms)
-  * [Creating an account and a project](#creating-an-account-and-a-project)
-  * [Integrating Contentful in your Vue application](#integrating-contentful-in-your-vue-application)
+  - [Creating an account and a project](#creating-an-account-and-a-project)
+  - [Integrating Contentful in your Vue application](#integrating-contentful-in-your-vue-application)
 - [Push your project to Github](#push-your-project-to-github)
 - [Setup Heroku](#setup-heroku)
 
 ## About this guide
-These setup instructions are for students of [Digital Ideation](https://www.hslu.ch/en/lucerne-school-of-information-technology/degree-programs/bachelor/digital-ideation/) taking the Studio Web/Mobile 2018 course. The following figure illustrates our stack.
+These setup instructions are for students of [Digital Ideation](https://www.hslu.ch/en/lucerne-school-of-information-technology/degree-programs/bachelor/digital-ideation/) taking the Studio Web/Mobile 2019 course. The following figure illustrates our stack.
 ![Techstack](/public/techstack.png "Techstack")
 
 You need to do the setup once per group. The following instructions assume that you have a technical background. To see the instructions on how to use the projects that your team mate has created go the [Getting started guide](getting_started.md).
@@ -28,7 +28,7 @@ You can open a command window on Windows by pressing the windows key and typing 
 
 * Install Node.js from [https://nodejs.org/en/](https://nodejs.org/en/)
 * If you have it installed already, check the version in the command line: $ node -v 
-* Make sure you have at least version 8.11, if not update.
+* Make sure you have at least version 10, if not update.
 
 ## Install Git
 Git helps your collaborte with your team mates and provides version control.
@@ -151,24 +151,28 @@ The goal of this step is to have the Contentful CMS integrated in your project. 
 * Create an organization
 * A sample project is created for you
 
+
 ### Integrating Contentful in your Vue application
-* $ npm install contentful --save
+* $ npm install contentful-management --save
 * Import the contenful library in *main.js*
 ```javascript
-import {createClient} from 'contentful'
+import {createClient} from 'contentful-management'
 ```
-* Configure the client with your access key and space token. We add the contentfulClient to the window Object to make it available globally in our application.
+
+* Create a content managment access token from the *API Keys* settings menu
+* Configure the client with your access key. We add the contentfulClient to the window Object to make it available globally in our application.
 ```javascript
 window.contentfulClient = createClient({
-    accessToken: '64d6a750c7ae5a7c93603911e56166b198ce5ab94be05261848e8a280ba8972c',
-    space: '7la5sjify8om'
+    accessToken: '64d6a750c7ae5a7c93603911e56166b198ce5ab94be05261848e8a280ba8972c'
 });
 ```
-* Get data from Contenful and print it to the console.
+* Get data from your Contenful space and print it to the console.
 ```javascript
-contentfulClient.getEntries()
+window.contentfulClient.getSpace('7la5sjify8om')
+.then((space) => space.getEnvironment('master'))
+.then((environment) => environment.getEntries()) 
 .then((response) => console.log(response.items))
-.catch(console.error);
+.catch(console.error)
 ```
 * Open the console in the browser and look at the ouptut.
 
@@ -188,17 +192,16 @@ The goal of this step is to have your project run in the cloud so that it can be
 * In your *package.json* set the Node.js engine
 ```javascript
   "engines": {
-    "node": "8.12.0"
+    "node": "10.x"
   },
 ```
-* Add a start script and a postinstall script to  your *package.json*
+* Add a start script to  your *package.json*
 ```javascript
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "start": "node server.js",
-    "lint": "vue-cli-service lint",
-    "postinstall": "npm run build"
+    "lint": "vue-cli-service lint"
   },
 ```
 
